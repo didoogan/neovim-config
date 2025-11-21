@@ -1,0 +1,27 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Swap, backup, undo files
+*.swp
+*.swo
+*.tmp
+session
+backup
+undo
+
+# Lazy plugin data (local)
+plugin/
+lazy/
+local/
+.cache/
+.state/
+
+# OS-specific
+.DS_Store
+
