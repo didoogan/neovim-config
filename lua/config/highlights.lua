@@ -1,5 +1,5 @@
 -- make unreachable code visible (bright red italic instead of dim)
--- vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", { fg = "#FF6B6B", italic = true })
+vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", { fg = "#FF6B6B", italic = true })
 
 -- optional: also tweak other diagnostic groups if needed
 -- vim.api.nvim_set_hl(0, "DiagnosticHint", { fg = "#89DDFF" })
