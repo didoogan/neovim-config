@@ -2,8 +2,13 @@ return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
     filesystem = {
+      filtered_items = {
+        visible = true, -- show filtered items as dimmed
+        hide_dotfiles = false,
+        hide_gitignored = false,
+      },
       follow_current_file = {
-        enabled = true, -- auto-expand the current file’s path
+        enabled = true, -- auto-expand the current file's path
         leave_dirs_open = false, -- collapse other dirs
       },
       group_empty_dirs = true, -- optional: groups empty dirs together
