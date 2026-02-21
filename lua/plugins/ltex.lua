@@ -12,7 +12,7 @@ return {
           },
           settings = {
             ltex = {
-              language = "en-US",
+              language = "auto",
               diagnosticSeverity = "warning",
               enabled = {
                 "bibtex", "gitcommit", "markdown", "org", "tex",

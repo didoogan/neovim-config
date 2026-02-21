@@ -9,6 +9,11 @@ return {
             "typescript", "typescriptreact", "rust",
             "markdown", "text", "gitcommit", "json", "yaml",
           },
+          settings = {
+            cSpell = {
+              language = "en,uk",
+            },
+          },
         },
       },
     },
