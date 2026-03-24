@@ -24,6 +24,16 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
   end,
 })
 
+-- Stop pylsp if it somehow attaches (replaced by ruff LSP)
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+    if client and client.name == "pylsp" then
+      vim.lsp.stop_client(client.id)
+    end
+  end,
+})
+
 -- Auto-resize ToggleTerm terminals when they open
 -- vim.api.nvim_create_autocmd({ "TermOpen", "WinEnter" }, {
 --   pattern = "term://*",
