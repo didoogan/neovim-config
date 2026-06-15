@@ -8,7 +8,7 @@ return {
         filetypes = {
           "python", "lua", "javascript", "javascriptreact",
           "typescript", "typescriptreact", "rust",
-          "markdown", "text", "gitcommit", "json", "yaml",
+          "gitcommit", "json", "yaml",
         },
         settings = {
           cSpell = {
