@@ -14,9 +14,6 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     ft = { "markdown" },
-    init = function()
-      vim.opt_local.conceallevel = 2
-    end,
     opts = {
       heading = {
         sign = false,
@@ -29,6 +26,9 @@ return {
       },
       bullet = {
         icons = { "●", "○", "◆", "◇" },
+      },
+      pipe_table = {
+        preset = "round",
       },
     },
   },

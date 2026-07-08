@@ -6,6 +6,11 @@
 vim.keymap.set("x", "p", '"_dP', { desc = "Paste without overwriting register" })
 vim.keymap.set("t", "\033", "<C-\\><C-n>", { noremap = true, silent = true, desc = "Exit terminal mode" })
 
+vim.keymap.set("n", "<leader>fy", function()
+  vim.fn.setreg("+", vim.fn.expand("%"))
+  vim.notify("Copied: " .. vim.fn.expand("%"))
+end, { desc = "Copy Relative File Path" })
+
 vim.keymap.set("n", "<leader>gw", "<cmd>DiffviewFileHistory %<cr>", {
   desc = "File History (Diffview)",
 })
